@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>Incomes List</h1>
+    <a href="{% url 'create_income' %}"><h2>Добавить запись</h2></a>
     <ul>
         {% for income in incomes %}
         <li>{{ income.source }}: {{ income.amount }}</li>
