@@ -3,4 +3,4 @@ from .models import Income
 
 def incomes_list(request):
     incomes = Income.objects.all()
-    return render(request, 'incomes/incomes_list.html', {'incomes': incomes})
+    return render(request, 'incomes_list.html', {'incomes': incomes})

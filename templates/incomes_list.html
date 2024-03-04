@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Incomes List</title>
+</head>
+<body>
+    <h1>Incomes List</h1>
+    <ul>
+        {% for income in incomes %}
+        <li>{{ income.source }}: {{ income.amount }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
